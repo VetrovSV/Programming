@@ -24,6 +24,7 @@ def key_handle(events):
     return pygame.key.get_pressed()
 
 
+
 def act_player(pl, key):
     if key[pygame.K_UP]:
         pl.set_dir(game_core.UP)
@@ -50,13 +51,28 @@ bg.fill(Color(0,0,0))
 key = None
 pygame.key.set_repeat(0,50)
 
+game_core.init()
+graphics.init()
+
+# время (time per frame) в мс за которое должен быть обработан кадр
+Tpf = int(1000 / 30)
+
 while True:
+    t0 = pygame.time.get_ticks()  # возвращает время в милисекундах
+
     screen.blit(bg, (0, 0))  # Каждую итерацию необходимо всё перерисовывать
 
     key = key_handle(pygame.event.get())
 
     act_player(game_core.player, key)
     game_core.handle_game()
-    graphics.draw_all(screen, game_core.player)
+    graphics.draw_all(screen, game_core.player, game_core.obstacles)
 
     pygame.display.update()  # обновление и вывод всех изменений на экран
+
+    # вычислим время затраченое на обработку одного кадра
+    dt = pygame.time.get_ticks() - t0
+
+    if dt < Tpf:
+        pygame.time.delay(Tpf - dt)
+
