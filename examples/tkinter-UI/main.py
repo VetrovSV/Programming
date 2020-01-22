@@ -7,7 +7,12 @@
 from tkinter import *
 from tkinter import filedialog
 from tkinter import ttk  # для настройки стилей
+
+
 from database import *
+
+# для хранения БД
+Data = []
 
 
 
