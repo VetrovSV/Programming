@@ -5,6 +5,7 @@ class Violation:
     name = ""           # ...
     violation = ""
     date = ""
+
     sum = 0.0
 
 
