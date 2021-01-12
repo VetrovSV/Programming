@@ -1,5 +1,7 @@
 # Программирование на Python
 
+## [Заочное 2021](https://github.com/VetrovSV/Programming/blob/master/dist-2021/readme.md)
+
 ## Лекции
 в pdf файлах **programming_xxx** приведены слайды с лекций по программированию. Некоторые из лекций находятся в разработке.
 
