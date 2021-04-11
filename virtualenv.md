@@ -26,19 +26,6 @@ pip3 install --user virtualenv virtualenvwrapper
 Активировать можно так: `my_env_name/Scripts/activate.bat`\
 Далее можно устанавливать пакеты пользуясь pip из этой же папки
 
-Смотрим список окружений\
-`workon` 	
-
-Меняем окружение\
-`workon env-name` 
-
-Выходим из окружения\
-`deactivate` 	
-
-Удаляем окружение\
-`rmvirtualenv env-name` 	
-
-В Windows к названиям программ нужно добавлять .bat
 
 # Ссылки
 https://pypi.org/project/virtualenv/
