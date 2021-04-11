@@ -23,7 +23,8 @@ pip3 install --user virtualenv virtualenvwrapper
 
 Будет создана папка `my_env_name` с нужными питону файлами
 
-Активировать можно так: `my_env_name/Scripts/activate.bat`
+Активировать можно так: `my_env_name/Scripts/activate.bat`\
+Далее можно устанавливать пакеты пользуясь pip из этой же папки
 
 Смотрим список окружений\
 `workon` 	
