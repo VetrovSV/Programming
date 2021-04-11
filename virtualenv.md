@@ -19,7 +19,11 @@ pip3 install --user virtualenv virtualenvwrapper
 ### Работа с окружениями
 
 Создаем новое окружение\
-`mkvirtualenv env-name` 	
+`virtualenv <my_env_name>` 	
+
+Будет создана папка `my_env_name` с нужными питону файлами
+
+Активировать можно так: `my_env_name/Scripts/activate.bat`
 
 Смотрим список окружений\
 `workon` 	
