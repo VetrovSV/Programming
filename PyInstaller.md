@@ -6,6 +6,11 @@
 # Создание исполняемого файла для программы с GUI
 
 `pyinstaller --onefile --windowed myscript.py`\
+
+или
+
+`python3 -m pyinstaller --onefile --windowed myscript.py`
+
 `--onefile` -- упаковать всё в один исполняемый файл;\
 `--windowed` -- не показывать консольное окно.
 
