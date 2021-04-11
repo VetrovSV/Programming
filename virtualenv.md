@@ -24,13 +24,13 @@ pip3 install --user virtualenv virtualenvwrapper
 Смотрим список окружений\
 `workon` 	
 
-Меняем окружение
+Меняем окружение\
 `workon env-name` 
 
-Выходим из окружения
+Выходим из окружения\
 `deactivate` 	
 
-Удаляем окружение
+Удаляем окружение\
 `rmvirtualenv env-name` 	
 
 
