@@ -33,7 +33,7 @@ pip3 install --user virtualenv virtualenvwrapper
 Удаляем окружение\
 `rmvirtualenv env-name` 	
 
-
+В Windows к названиям программ нужно добавлять .bat
 
 # Ссылки
 https://pypi.org/project/virtualenv/
