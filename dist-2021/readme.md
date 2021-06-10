@@ -3,7 +3,7 @@
 - повторение материала прошлого семсетра
 - текстовые файлы
 - классы: поля, конструктор
-- слайды: [Programming_14_data_structures.pdf](Programming_14_data_structures.pdf), [Programming_14_files.pdf](Programming_14_files.pdf)
+- слайды: [Programming_14_data_structures.pdf](../Programming_14_data_structures.pdf), [Programming_14_files.pdf](../Programming_14_files.pdf)
 
 ## Лекция 2
 - методы
