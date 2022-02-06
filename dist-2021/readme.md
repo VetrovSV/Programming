@@ -1,4 +1,16 @@
-# Начало
+# Сесметр 2
+## Занятие 1
+- повторение материала прошлого семсетра
+- текстовые файлы: запись, чтение
+- классы: поля, конструктор, self, создание объектов
+- слайды: [Programming_14_data_structures.pdf](../Programming_14_data_structures.pdf), [Programming_14_files.pdf](../Programming_14_files.pdf)
+
+## Лекция 2
+- методы
+- бинарные файлы
+- 
+
+# Сесметр 1
 1. Скачайте и установите набор инструментов (интерпретатор, jit компилятор, стандартную библиотеку, ... ) [Python 3](https://www.python.org/downloads/)
 2. Скачайте и установите среду разработки [PyCharm Community Edition](https://www.jetbrains.com/ru-ru/pycharm/)
 

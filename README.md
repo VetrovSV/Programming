@@ -27,7 +27,9 @@
 **jupyter-example** - пример использования блокнота Jupyter (jupyter notebook)
 
 
-## Ссылки
+## Ссылки и литература
+- Марк Лутц. Изучаем Python.
+- Марк Лутц. Программируем на Python.
 - [Python 3](https://www.python.org/downloads/)
 - [PyCharm Community Edition](https://www.jetbrains.com/ru-ru/pycharm/)
 - [Sublime Text 3](https://www.sublimetext.com/3)
