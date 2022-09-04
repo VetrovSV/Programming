@@ -1,5 +1,7 @@
 # Программирование на Python
 
+## [2022 СПО](2022_s/plan1.md)
+
 ## [Заочное 2021](https://github.com/VetrovSV/Programming/blob/master/dist-2021/readme.md)
 
 ## Лекции
