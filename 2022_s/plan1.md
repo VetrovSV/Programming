@@ -22,6 +22,7 @@
 4. Ввод и вывод. 
 
 Слайды:https://raw.githubusercontent.com/VetrovSV/Programming/master/00_intro.pdf
+WolframAlpha (для проверки вычислений): https://github.com/ivtipm/Programming/blob/master/wolframalpha.md
 
 # Практика 4
 
