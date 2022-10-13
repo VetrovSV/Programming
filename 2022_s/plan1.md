@@ -10,7 +10,11 @@
 1. Сообщения об ошибках. Логические и синтаксические ошибки.
 1. Логические операции.
 1. Условный оператор. Вложенность.
+
 Слайды: https://raw.githubusercontent.com/VetrovSV/Programming/master/Programming_01.pdf
+
+#### Примеры
+![](flowchart_if_python_1.drawio.png)
 
 
 # Лекция 4. Введение в Python
