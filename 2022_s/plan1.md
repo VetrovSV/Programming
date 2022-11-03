@@ -4,7 +4,10 @@
 ноябрь 3
 1. Циклические операции. Цикл с предусловием. Цикл с постусловием. Примеры. (продолжение)
 
+![](cycles_examples1.drawio.png)
 https://raw.githubusercontent.com/VetrovSV/Programming/master/Programming_02.pdf
+
+
 
 # Лекция 6
 октябрь 27 
