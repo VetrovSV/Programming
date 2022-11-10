@@ -6,6 +6,9 @@
 - списки
   - https://raw.githubusercontent.com/VetrovSV/Programming/master/Programming_03.pdf
 
+### Домашнее задание
+- Решите задачи из раздела Циклы на суммирование опредёленного количества элеентов с помошью цикла for
+
 
 # Занятие 7
 ноябрь 3
