@@ -3,8 +3,9 @@
 # Занятие 8
 ноябрь 10
 - цикл for; операции break и continue
-- списки?
+- списки
   - https://raw.githubusercontent.com/VetrovSV/Programming/master/Programming_03.pdf
+
 
 # Занятие 7
 ноябрь 3
