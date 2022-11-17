@@ -31,8 +31,11 @@ for i in range(0, n):
 for i in range(0, n):
     print(b[i], " ")
 
-
 ```
+
+![](cycle1.png)
+![](cycle2.png)
+![](list1.png)
 
 # Занятие 8
 ноябрь 10
