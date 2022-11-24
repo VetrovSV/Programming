@@ -76,6 +76,10 @@ for i in range(0, n):
 ![](cycle2.png)
 ![](list1.png)
 
+Слайды лекции: 
+1. https://raw.githubusercontent.com/VetrovSV/Programming/master/Programming_02.pdf#Navigation80
+2. https://raw.githubusercontent.com/VetrovSV/Programming/master/Programming_03.pdf
+
 # Занятие 8
 ноябрь 10
 - цикл for; операции break и continue
