@@ -9,14 +9,43 @@
 
 from random import *
 
+
 def print_list(lst: list):
     """выводит список lst на экран"""
     size = len(lst)    # получение длины списка (количества элементов)
     for i in range(0, size):
-        print( lst[i] )
+        print( f"{lst[i]:.2f}", end = " ")
 
 
+def square_list(lst: list):
+    """создаёт новый список C из списка lst, по формуле: C[i] = lst[i] ^ 2 """
+    size = len(lst)  # получение длины списка (количества элементов)
+    C = [0]*size
+    for i in range(0, size):
+        C[i] = lst[i] ** 2
+    return C
 
+
+n: int = 12
+a =  [0]*n       # исходный список (массив)
+a2 = [0]*n       # массив из квадратов
+
+# заполнение списка случайными числами
+for i in range(0, n):
+    a[i] = uniform(-100, 100)
+
+# вывод списка на экран
+print("исходный список a1, ..., an: ")
+print_list(a)
+print()
+print()
+
+# вычисление a1^2, ..., an^2, запись результата в список a2
+a2 = square_list(a)
+
+# вывод списка квадратов на экран
+print("список a1^2, ..., an^2: ")
+print_list(a2)
 ```
 
 # Занятие 11. Случайные числа. Функции.
