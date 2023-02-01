@@ -21,7 +21,21 @@ pip3 install matplotlib
 ![](pip_install_power_shell.png)
 
 **Cоздание графиков**
+Пример создания простого графика
+```python
+# подключение из библиотеки matplotlib модуля pyplot по именем plt (для краткости)
+import matplotlib.pyplot as plt
 
+# создание значений для X и Y в виде списков
+x = [1,2,3]
+y = [2,4,6]
+
+# нарисуем график
+plt.plot( x, y)
+
+# покажем окно с графиком
+plt.show()
+```
 
 
 
