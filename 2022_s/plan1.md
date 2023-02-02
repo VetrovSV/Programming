@@ -27,7 +27,7 @@ pip3 install matplotlib
 ![](pycharm_install_package.png)
 
 
-**Cоздание графиков**
+### Cоздание графиков
 Пример создания простого графика
 ```python
 # подключение из библиотеки matplotlib модуля pyplot по именем plt (для краткости)
