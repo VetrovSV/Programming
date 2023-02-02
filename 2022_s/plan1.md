@@ -41,8 +41,11 @@ import matplotlib.pyplot as plt
 x = [1,2,3]
 y = [2,4,6]
 
-# нарисуем график
-plt.plot( x, y)
+# нарисуем график по точкам
+plt.plot( x, y)     
+plt.xlabel("ось х")         # задать подпись к оси x    
+plt.ylabel("ось y")         # задать подпись к оси y
+plt.grid(True)              # показать сетку
 
 # покажем окно с графиком
 plt.show()
