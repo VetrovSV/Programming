@@ -23,8 +23,11 @@ pip3 install matplotlib
 Если в вашем PyCharm используется не системный интерпретатор Python, а своя копия, то можно установить библиотеку matplotlib для неё
 Откройте панель установки библиотек PyCharm: меню View > Tool Windows > Python Packages
 
-Внизу откроется панель:
+Внизу откроется панель:\\
 ![](pycharm_install_package.png)
+
+1. В поле для поиска укажите имя библиотеки для построения графиков: matplotlib
+2. Нажмите Install package
 
 
 ### Cоздание графиков
