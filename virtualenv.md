@@ -49,6 +49,7 @@ pip3 install --user virtualenv virtualenvwrapper
 ```
 
 Активировать можно так: `my_env_name/Scripts/activate.bat`\
+Или так: `source my_env_name/bin/activate`
 Далее можно устанавливать пакеты пользуясь pip из этой же папки
 
 Деактивировать в ubuntu: `deactivate`
