@@ -19,7 +19,7 @@ pip3 install --user virtualenv virtualenvwrapper
 ### Работа с окружениями
 
 Создаем новое окружение\
-`virtualenv <my_env_name>` 	
+`python3 -m venv` 	
 
 Будет создана папка `my_env_name` с нужными питону файлами.
 Например:
