@@ -30,7 +30,7 @@ World
 **Файлы**
 - https://raw.githubusercontent.com/VetrovSV/Programming/master/Programming_14_files.pdf
 
-Пример записи 
+**Пример 1. Запись в файл**
 ```python
 # открываем файл 'data.txt' как текстовый (t) для записи (w),
 # используем универсальную таблицу кодов символов Юникод (UTF-8)
@@ -58,7 +58,7 @@ hello, World!42
 123456
 ```
 
-**Пример вывода в файл #2**
+**Пример 2. Вычисление и запись отчёта в файл**
 ```python
 print("m = ")
 m:float = float( input() )
@@ -71,16 +71,18 @@ bmi:float = m / h**2
 print(f"При m = {m} и h = {h}, ИМТ = {bmi:.2f}")
 
 # вывод в файл
-f = open('report_1.txt', 'at', encoding='UTF-8')
-f.write( f"При m = {m} и h = {h}, ИМТ = {bmi:.2f}" )
-f.write('\n\n')     # вывод пустой строки
-f.close()
+f = open('report_1.txt', 'at', encoding='UTF-8')        # открываем текстовый файл для дополнения
+f.write( f"При m = {m} и h = {h}, ИМТ = {bmi:.2f}" )    # запись форматной строки в файл
+f.write('\n\n')     # вывод пустой строки              
+f.close()           # pзакрытие файла (чтобы гарантированно записать в файловый буффер в файл)
 ```
 
 **Чтение данных из файла**
 ```python
 f_input = open('input.txt', 'rt')
-m:float = float( f_input.readline() )
+m:float = float( f_input.readline() ) 
+# .readline() -- чтение одной строки файла
+
 # m:float = float( input() )
 h:float = float( f_input.readline() )
 f_input.close()
