@@ -58,7 +58,7 @@ hello, World!42
 123456
 ```
 
-**Пример вывода 2**
+**Пример вывода в файл #2**
 ```python
 print("m = ")
 m:float = float( input() )
@@ -77,6 +77,30 @@ f.write('\n\n')     # вывод пустой строки
 f.close()
 ```
 
+**Чтение данных из файла**
+```python
+f_input = open('input.txt', 'rt')
+m:float = float( f_input.readline() )
+# m:float = float( input() )
+h:float = float( f_input.readline() )
+f_input.close()
+
+bmi:float = m / h**2
+
+print(f"При m = {m} и h = {h}, ИМТ = {bmi:.2f}")
+
+# вывод в файл
+f = open('report_1.txt', 'at', encoding='UTF-8')
+f.write( f"При m = {m} и h = {h}, ИМТ = {bmi:.2f}" )
+f.write('\n\n')     # вывод пустой строки
+f.close()
+```
+
+Файл input.txt:
+```
+80
+1.83
+```
 
 ### Задание
 1. Добавьте к программам по задачам из первого раздела задачника запись отчёта о выполнении: выводите исходные данные и вычисленные значений в файл.
