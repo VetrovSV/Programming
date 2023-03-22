@@ -1,5 +1,7 @@
 
 # Основы программирования
+## Занятие n. Графика с библиотекой Pillow
+https://raw.githubusercontent.com/VetrovSV/Programming/master/Programming_graphics.pdf
 
 # Семестр 2
 ## Занятие 7. Библиотека numpy
