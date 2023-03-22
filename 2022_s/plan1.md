@@ -1,7 +1,14 @@
 
 # Основы программирования
 ## Занятие n. Графика с библиотекой Pillow
-https://raw.githubusercontent.com/VetrovSV/Programming/master/Programming_graphics.pdf
+- Слайды https://raw.githubusercontent.com/VetrovSV/Programming/master/Programming_graphics.pdf
+
+
+#### Задание
+1. Нарисуйте с помощью библиотеки Pillow одну из картин Пита Монлриана в стиле неопластицизм: https://gallerix.ru/storeroom/1729666578/
+1. Дполните конспект информацией о библиотеке Pillow, приведите примеры
+1. 
+
 
 # Семестр 2
 ## Занятие 7. Библиотека numpy
