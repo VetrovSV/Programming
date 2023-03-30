@@ -1,5 +1,11 @@
 
 # Основы программирования
+## Занятие n+1. Графика с библиотекой Pillow
+### Задание
+Заполните изображение равномерно раставленными геометрическими фигурами
+
+![](fill_with_primitives.png)
+
 ## Занятие n. Графика с библиотекой Pillow
 - Слайды https://raw.githubusercontent.com/VetrovSV/Programming/master/Programming_graphics.pdf
 
