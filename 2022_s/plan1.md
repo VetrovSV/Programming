@@ -26,7 +26,7 @@ def text(xy, text, fill=None, font=None, anchor=None, spacing=4, align='left', d
 - fill - цвет текста, например (200,0,0)
 
 Для текста задайте шрифт
-```
+```python
 import matplotlib.font_manager
 # напечатать список доступных шрифтов (представленных файлами ttf)
 print( matplotlib.font_manager.findSystemFonts(fontpaths=None, fontext='ttf') )
