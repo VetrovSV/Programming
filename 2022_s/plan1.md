@@ -25,6 +25,20 @@ def text(xy, text, fill=None, font=None, anchor=None, spacing=4, align='left', d
 - text:str - текст
 - fill - цвет текста, например (200,0,0)
 
+Для текста задайте шрифт
+```
+import matplotlib.font_manager
+# напечатать список доступных шрифтов (представленных файлами ttf)
+print( matplotlib.font_manager.findSystemFonts(fontpaths=None, fontext='ttf') )
+
+# переменная для рисования графических примитивов: линий, прямоугольников, ....
+draw = ImageDraw.Draw(img)
+# загрузка шрифта
+font = ImageFont.truetype("COOPBL.TTF", 50)             # 50 - размер текста
+# создание надписи по координатам (100,200), цвета  (200,0,0)
+draw.text( (100, 200), "test test test", (200,0,0), font=font)
+```
+
 Использование метода text такое же как и методов рисования геометрических примитивов: прямоугольника, эллипса, линии и т.п.
 
 Подберите шрифт.
