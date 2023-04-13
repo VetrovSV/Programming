@@ -61,12 +61,13 @@ def text(xy, text, fill=None, font=None, anchor=None, spacing=4, align='left', d
 
 Для текста задайте шрифт
 ```python
+from PIL import Image, ImageDraw, ImageFont 
+
+# напечатаем имена файлов со шрифтами чтобы знать, к какому обращаться при загрузке шрифта 
 import matplotlib.font_manager
 # напечатать список доступных шрифтов (представленных файлами ttf)
 print( matplotlib.font_manager.findSystemFonts(fontpaths=None, fontext='ttf') )
 
-# переменная для рисования графических примитивов: линий, прямоугольников, ....
-draw = ImageDraw.Draw(img)
 # загрузка шрифта
 font = ImageFont.truetype("COOPBL.TTF", 50)             # 50 - размер текста
 # создание надписи по координатам (100,200), цвета  (200,0,0)
