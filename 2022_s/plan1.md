@@ -5,12 +5,12 @@
 
 Пример вставки изображения
 ```python
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw
 
 # https://www.norvege-inedite.com/uploads/sites/32/2019/11/naeroyfjord-iii-evelyne.jpeg (naeroyfjord.jpeg)
 # https://e7.pngegg.com/pngimages/210/1000/png-clipart-flag-of-norway-electric-vehicle-map-map-of-finland-flag-text.png (pngwing.com.png)
 
-# создание нового изображений шириной W и высотой H, способ кодирования цвета - RGB
+# открываем основное изображение 
 img = Image.open("naeroyfjord.jpeg")
 
 # изображение для вставки
@@ -18,12 +18,12 @@ logo = Image.open("pngwing.com.png")
 print("Размеры изображения")
 print(logo.width)       # 1800
 print(logo.height)      # 2144
-# изменение размера изображения
+# изменение размера изображения. размеры стоит изменять с сохранением соотношения сторон 
 logo = logo.resize( (180, 214))
 
 # вставка без учёта прозрачности картинки logo
 # img.paste( logo, [10,10] )
-
+# или 
 # вставка c учётом прозрачности картинки logo
 img.paste( logo, [50,50], logo )
 
