@@ -5,23 +5,34 @@
 
 Пример вставки изображения
 ```python
-img = Image.open("1600w-ZdkV5WZu7K4.webp")		# основное изображение
+from PIL import Image, ImageDraw, ImageFont
+
+# https://www.norvege-inedite.com/uploads/sites/32/2019/11/naeroyfjord-iii-evelyne.jpeg (naeroyfjord.jpeg)
+# https://e7.pngegg.com/pngimages/210/1000/png-clipart-flag-of-norway-electric-vehicle-map-map-of-finland-flag-text.png (pngwing.com.png)
+
+# создание нового изображений шириной W и высотой H, способ кодирования цвета - RGB
+img = Image.open("naeroyfjord.jpeg")
+
 # изображение для вставки
-logo = Image.open("Python-logo-notext.svg.png")
-
+logo = Image.open("pngwing.com.png")
 print("Размеры изображения")
-print(logo.width)		# 1900
-print(logo.height)		# 2000
+print(logo.width)       # 1800
+print(logo.height)      # 2144
+# изменение размера изображения
+logo = logo.resize( (180, 214))
 
-# перед вставкой уменьшим размеры вставляемого изображения с сохранением пропорций
-logo = logo.resize( (19*3,20*3))
+# вставка без учёта прозрачности картинки logo
+# img.paste( logo, [10,10] )
 
-# вставка по координатам 10,10 (левый верхний угол) без учёта прозрачности картинки logo
-img.paste( logo, [10,10] )
+# вставка c учётом прозрачности картинки logo
+img.paste( logo, [50,50], logo )
 
-# вставка по координатам 10,10 (левый верхний угол) c учётом прозрачности картинки logo
-img.paste( logo, [10,10], logo )
+
+img.save('result.png')
+img.show()
 ```
+
+
 
 ### Задание. Изображение и текст
 Заполните несколько подарочных сертификатов с помощью библиотеки Pillow, используя заранее заготовленный шаблон.
@@ -111,7 +122,7 @@ img.show()
 1. Нарисуйте с помощью библиотеки Pillow одну из картин Пита Мондриана в стиле неопластицизм: https://gallerix.ru/storeroom/1729666578/
 1. Дополните конспект информацией о библиотеке Pillow, приведите примеры
 
-
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Piet_Mondriaan%2C_1930_-_Mondrian_Composition_II_in_Red%2C_Blue%2C_and_Yellow.jpg/240px-Piet_Mondriaan%2C_1930_-_Mondrian_Composition_II_in_Red%2C_Blue%2C_and_Yellow.jpg)
 
 # Семестр 2
 ## Занятие 7. Библиотека numpy
