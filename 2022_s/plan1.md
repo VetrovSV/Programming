@@ -32,6 +32,7 @@ img.save('result.png')
 img.show()
 ```
 
+<img src="result.png" width = 400>
 
 
 ### Задание. Изображение и текст
