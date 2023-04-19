@@ -61,17 +61,27 @@ def text(xy, text, fill=None, font=None, anchor=None, spacing=4, align='left', d
 
 Для текста задайте шрифт
 ```python
-from PIL import Image, ImageDraw, ImageFont 
+from PIL import Image, ImageDraw, ImageFont
 
-# напечатаем имена файлов со шрифтами чтобы знать, к какому обращаться при загрузке шрифта 
+from PIL import Image, ImageDraw, ImageFont
+
+# напечатаем имена файлов со шрифтами, чтобы знать, к какому обращаться при загрузке шрифта
 import matplotlib.font_manager
 # напечатать список доступных шрифтов (представленных файлами ttf)
 print( matplotlib.font_manager.findSystemFonts(fontpaths=None, fontext='ttf') )
 
 # загрузка шрифта
-font = ImageFont.truetype("COOPBL.TTF", 50)             # 50 - размер текста
+font = ImageFont.truetype("consola.ttf", 32)             # 50 - размер текста
+
+
+img = Image.open("background.webp")
+# переменная для рисования графических примитивов: линий, прямоугольников, ....
+draw = ImageDraw.Draw(img)
+draw.rectangle( [(830,750-20),(1570, 850)], fill=(0,0,0))
 # создание надписи по координатам (100,200), цвета  (200,0,0)
-draw.text( (100, 200), "test test test", (200,0,0), font=font)
+draw.text( (850, 750), "Any fool can write code that a computer\ncan understand.Good programmers\nwrite code that humans can understand", (255,255,255), font=font)
+
+img.show()
 ```
 
 Использование метода text такое же как и методов рисования геометрических примитивов: прямоугольника, эллипса, линии и т.п.
