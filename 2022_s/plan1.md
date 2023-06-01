@@ -1,4 +1,72 @@
 # Основы программирования
+## Классы и файлы
+```python
+class Student:
+    # поля
+    name: str = ""
+    fname: str= ""
+    group: str = ""
+    grade: int = 0
+
+
+# создание переменной - объекта (экземпляр класса)
+s1 = Student()
+s1.name = "Антон"
+s1.fname = "Мурзин"
+s1.group = "СиСАК-22-2"
+s1.grade = 4
+
+s2 = Student()
+s2.name = "Иван"
+s2.fname = "Иванов"
+s2.group = "СиСАК-22-2"
+s2.grade = 5
+
+
+s3 = Student()
+s3.name = "Пётр"
+s3.fname = "Петров"
+s3.group = "СиСАК-22-2"
+s3.grade = 2
+
+
+s4 = Student()
+s4.name = "Константин"
+s4.fname = "Константинов"
+s4.group = "СиСАК-22-2"
+s4.grade = 3
+
+
+f = open('students.txt', 'w', encoding='utf-8')
+
+f.write( s1.name + " " + s1.fname + " " + s1.group + " " + str(s1.grade) + '\n')
+f.write( s2.name + " " + s2.fname + " " + s2.group + " " + str(s2.grade) + '\n')
+f.write( s3.name + " " + s3.fname + " " + s3.group + " " + str(s3.grade) + '\n')
+f.write( s4.name + " " + s4.fname + " " + s4.group + " " + str(s4.grade) + '\n')
+
+f.close()
+
+students = []
+
+f2 = open('students.txt', encoding='utf-8')
+for line in f2:
+    words = line.split()
+    s = Student()
+    s.name = words[0]
+    s.fname = words[1]
+    s.group = words[2]
+    s.grade = int(words[3])
+    students.append( s )
+    print(line, end="")
+f2.close()
+
+print()
+for i in range(0, len(students)):
+    s = students[i]     # s - Student
+    if s.grade > 2:
+        print( s.fname + " " + str(s.grade) )
+```
+
 ## Занятие n+2. Интернет-запросы
 
 ```python
