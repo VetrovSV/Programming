@@ -26,7 +26,7 @@ driver.close()
 ```
 
 **Поиск и обращение к элементам интерфейса**
-```pyhton
+```python
 from selenium.webdriver.common.by import By     # класс, описывающий критерии поиска элементов
 
 # поиск элементов по XPATH, 
