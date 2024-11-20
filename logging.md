@@ -33,3 +33,13 @@ logging.warning("Предупреждение: низкий объем памя�
 logging.error("Ошибка загрузки данных (ERROR)")
 logging.critical("Критическая ошибка: завершение программы (CRITICAL)")
 ```
+
+
+**Логирование в консоль и файл**
+```py
+logging.basicConfig( level=logging.INFO,  
+                    handlers=[
+                        logging.FileHandler("some_file.log"),
+                        logging.StreamHandler()
+                    ] )
+```
