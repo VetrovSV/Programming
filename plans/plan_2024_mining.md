@@ -64,10 +64,8 @@ https://miro.com/app/board/uXjVNQC1rq8=/?share_link_id=701921124290
 1. Оформление кода, на примере простой программы: [../examples/python_intro/1_input_math_out.py](../examples/python_intro/1_input_math_out.py)
 2. Условный оператором: https://github.com/VetrovSV/Programming/blob/master/2022_s/flowchart_if_python_1.drawio.png
 3. Циклы
-- ../examples/python_intro/cycles.drawio.png
-- https://github.com/VetrovSV/Programming/raw/master/2022_s/cycles_examples1.drawio.png 
-
-
+    - [../examples/python_intro/cycles.drawio.png](../examples/python_intro/cycles.drawio.png)
+    - [https://github.com/VetrovSV/Programming/raw/master/2022_s/cycles_examples1.drawio.png](https://github.com/VetrovSV/Programming/raw/master/2022_s/cycles_examples1.drawio.png)
 4. [Пример работы со списками (массивами)](../examples/python_intro/40_lists.py)
 
 
