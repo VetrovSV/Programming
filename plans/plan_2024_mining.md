@@ -28,7 +28,7 @@ https://miro.com/app/board/uXjVNQC1rq8=/?share_link_id=701921124290
 - Файлы. Текстовые файлы. Создание, открытие, запись и чтение. Когда использовать файлы а когда списки?
 
 
-Оформление кода, на примере простой программы: [python_intro/1_input_math_out.py](python_intro/1_input_math_out.py)
+Оформление кода, на примере простой программы: [examples/python_intro/1_input_math_out.py](examples/python_intro/1_input_math_out.py)
 
 
 ## Практика
