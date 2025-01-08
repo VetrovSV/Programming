@@ -24,7 +24,7 @@ s2.fname = "Иванов"
 s2.group = "СиСАК-22-2"
 s2.grade = 5
 
-
+ 
 s3 = Student()
 s3.name = "Пётр"
 s3.fname = "Петров"
