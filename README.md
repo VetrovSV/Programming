@@ -2,7 +2,7 @@
 
 Задачник: [ivtipm.github.io/Programming/Files/spisocall.htm](https://ivtipm.github.io/Programming/Files/spisocall.htm)
 
-## [СПО 2024](plans/plan_2024_mining.md)
+## [СПО 2024](plans/spo/2025.md)
 ## [Заочное 2025 (ГД)](plans/plan_2024_mining.md)
 
 ## [СПО 2022](2022_s/plan1.md)
