@@ -29,9 +29,9 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 pip install uv
 ```
 
-#### Использование
+### Использование
 
-**Пакеты**
+#### Пакеты
 
 ```bash
 uv pip install [пакет]           # Установить пакет (как pip)
@@ -40,7 +40,23 @@ uv pip freeze > requirements.txt    # Экспорт зависимостей
 uv pip compile requirements.in -o requirements.txt  # Генерация lock-файла
 ```
 
-**Виртуальные окружения**
+#### lock файлы
+Совместно с requirements.txt используются lock файлы. Они фиксируют неуказанные в requirements пакеты. 
+
+Например в requirements.txt указано:
+```
+requests>=2.25.0
+```
+
+Без lock-файла при установке может скачаться requests 2.31.0, а с ним — несовместимая версия urllib3.
+
+Lock-файл фиксирует точные версии:
+```
+requests==2.31.0
+urllib3==2.0.7  # автоматически добавленная зависимость
+```
+
+#### Виртуальные окружения**
 ```bash
 uv venv .venv                     # Создать окружение в папке .venv
 source .venv/bin/activate         # Активировать (Linux/macOS)
