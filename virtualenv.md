@@ -54,6 +54,8 @@ pip3 install --user virtualenv virtualenvwrapper
 
 Деактивировать в ubuntu: `deactivate`
 
+# См. также
+uv - более производительный и удобный инструмент для работы с виртуальными окружениями
 
 # Ссылки
 https://pypi.org/project/virtualenv/
