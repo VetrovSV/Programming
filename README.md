@@ -1,5 +1,10 @@
 # Программирование на Python
 
+
+## Питон для МО
+https://github.com/VetrovSV/Programming/blob/master/plans/ML/readme.md
+
+
 Задачник: [ivtipm.github.io/Programming/Files/spisocall.htm](https://ivtipm.github.io/Programming/Files/spisocall.htm)
 
 ## [СПО 2024](plans/spo/2025.md)
