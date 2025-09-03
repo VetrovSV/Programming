@@ -48,8 +48,8 @@ Git рекомендован, но не обязателен.
 
 Задания оформлены как набор работ, которые студенты выполняют между занятиями и защищают на практиках.
 
-1. **Основы Python**
-   https://github.com/VetrovSV/Programming/blob/master/plans/ML/tasks/tasks_programming.md
+1. [Основы Python](tasks/tasks_programming.md)
+   
 
 2. **NumPy**
 
