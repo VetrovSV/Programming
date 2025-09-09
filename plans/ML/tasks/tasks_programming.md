@@ -15,13 +15,12 @@
 
 
 # Условный оператор 
-![](images/20_if.png)
-
+<!-- ![](images/20_if.png) -->
+<img src="images/20_if.png" width=550>
 
 # Циклы
-![](images/30_cycle_1.png)
-![](images/30_cycle_2.png)
-
+<img src="images/30_cycle_1.png" width=550>
+<img src="images/30_cycle_2.png" width=550>
 
 # Массивы list и numpy array
 
