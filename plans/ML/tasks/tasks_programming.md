@@ -88,9 +88,10 @@ def my_func():
     pass
     # ...
 
-REPEAT = 1_000
+NUMBER = 1          # сколько раз повторять в рамках одной серии измерений времени
+REPEAT = 1_000      # сколько раз повторять серия измерений времени
 raw_times = timeit.repeat(lambda: my_func(), 
-                          repeat=repeat, number=number)
+                          repeat=REPEAT, number=number)
 ```
 
 # Классы
