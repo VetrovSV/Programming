@@ -25,7 +25,12 @@
 ## План
 
 1. Введение, обзор курса, требования, организация занятий, критерии защиты практик. Рабочие среды: Pycharm, VS Code. (1 а.ч.)
-2. Python — основы синтаксиса, типы, выражения, управление потоком (if/for/while), функции — (2 а.ч.)
+2. Python — основы синтаксиса, типы, выражения, управление потоком выполнения (if/for/while), исключительные ситуации (1 а.ч.)
+   - [exceptions/readme.md](exceptions/readme.md)
+2. Функции, модули, тестирование  — (1 а.ч.)
+   - 
+   - [package_managers.md](package_managers.md): PIP, requrements.txt, UV.
+   - [virtualenv.md](virtualenv.md)
 3. Python — структуры данных (list, tuple, dict, set), comprehensions, итераторы, генераторы — (2 а.ч.)
 4. Python — функции высшего порядка, модули, пакеты, ООП‑основы, аннотации типов. (1 а.ч.)
 5. Инструменты и среды: Jupyter, VS Code, Google Collaboratory. (1 а.ч.)
