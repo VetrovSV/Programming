@@ -31,6 +31,7 @@
    - 
    - [package_managers.md](package_managers.md): PIP, requrements.txt, UV.
    - [virtualenv.md](virtualenv.md)
+   - [tests/tests.md](tests/tests.md)
 3. Python — структуры данных (list, tuple, dict, set), comprehensions, итераторы, генераторы — (2 а.ч.)
 4. Python — функции высшего порядка, модули, пакеты, ООП‑основы, аннотации типов. (1 а.ч.)
 5. Инструменты и среды: Jupyter, VS Code, Google Collaboratory. (1 а.ч.)
