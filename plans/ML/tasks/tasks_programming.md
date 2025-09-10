@@ -114,5 +114,10 @@ print(raw_times)
 ```py
 timeit.repeat(stmt="f()", setup="x = prepare(); from __main__ import f", number=100, repeat=3)
 ```
+
+# Виртуальное окружение
+
+
+Шпаргалка по Virtual Enviroment https://github.com/VetrovSV/Programming/blob/master/virtualenv.md
 # Классы
 
