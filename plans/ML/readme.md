@@ -31,7 +31,7 @@
    - [package_managers.md](package_managers.md): PIP, requrements.txt, UV.
    - [tests/tests.md](tests/tests.md)
 6. Управление зависимостями: pip, venv, **uv** (1 а.ч.)
-   - [virtualenv.md](virtualenv.md)
+   - [virtualenv.md](../../virtualenv.md)
 3. Python — структуры данных (list, tuple, dict, set), comprehensions, итераторы, генераторы — (2 а.ч.)
 4. Python — функции высшего порядка, модули, пакеты, ООП‑основы, аннотации типов. (1 а.ч.)
 5. Инструменты и среды: Jupyter, VS Code, Google Collaboratory. (1 а.ч.)
@@ -71,6 +71,7 @@ Git рекомендован, но не обязателен.
 
    * Задачи на векторизацию (статистика по массивам, скользящие окна, матричные преобразования).
    * Требование: убрать циклы там, где возможно, показать прирост скорости (короткий отчёт).
+   * https://github.com/ivtipm/ML/blob/main/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%20%D0%B8%20%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8%20%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.pdf
 
 3. **Pandas + EDA**
 
