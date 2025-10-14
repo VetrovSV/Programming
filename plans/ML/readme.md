@@ -40,6 +40,7 @@
 9. Визуализация: matplotlib, seaborn; принципы наглядной визуализации для EDA и отчётов (1 а.ч.)
 10. scikit‑learn: API (fit/transform/predict), пайплайны, кросс‑валидация, базовые модели: линейная регрессия, логистическая регрессия. (1 а.ч.)
 11. Быстрое прототипирование: Gradio, FastAPI. (2 а.ч.)
+   - [examples/gradio](../examples/gradio)
 12. Docker — концепция и минимальный пример Dockerfile для Python‑приложения *(опционально)*. (1 а.ч.)
 
 Шпаргалка по Питону: https://miro.com/app/board/uXjVNQC1rq8=/?share_link_id=938578428749
