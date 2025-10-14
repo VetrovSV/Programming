@@ -26,8 +26,9 @@ def on_submit(mass:float, heigh:float):
 
 # Построение интерфейса
 demo = gr.Interface(    title = "Вычисление индекса массы тела",                # заголовок веб-страницы
-                        description = r"$$ ИМТ = \frac{m}{h^2}  $$",            # блок над формой, r - raw-строка, которая не требует экранирования символов (в частности \)
-                        article=" См. одноимённую статью на [Википедии](https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B5%D0%BA%D1%81_%D0%BC%D0%B0%D1%81%D1%81%D1%8B_%D1%82%D0%B5%D0%BB%D0%B0)",        # тест ниже формы
+                        description = r"$$ ИМТ = \frac{m}{h^2}  $$",            # блок над формой, r - raw-строка, которая не требует экранирования символов (в частности \); сам текст приведён как Markdown
+                        article="""См. одноимённую статью на [Википедии](https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B5%D0%BA%D1%81_%D0%BC%D0%B0%D1%81%D1%81%D1%8B_%D1%82%D0%B5%D0%BB%D0%B0)
+                        """,        # тест ниже формы
                         fn = on_submit,                                         # обработчик формы
                         inputs=[gr.Number(placeholder=65, label="масса, кг"), 
                                 gr.Number(placeholder=1.7, label="рост, м")],         
