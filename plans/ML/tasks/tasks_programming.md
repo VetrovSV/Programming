@@ -143,6 +143,8 @@ timeit.repeat(stmt="f()", setup="x = prepare(); from __main__ import f", number=
 
 Шпаргалка по Virtual Environment https://github.com/VetrovSV/Programming/blob/master/virtualenv.md
 
+## Следующие задания
+- [gradio.md](./gradio.md)
+- [api.md](./api.md)
 
-# Классы
 
