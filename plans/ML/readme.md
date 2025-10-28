@@ -42,7 +42,8 @@
 11. Быстрое прототипирование: Gradio, FastAPI. (2 а.ч.)
    - [../../examples/gradio/](../../examples/gradio/)
    - [../../web_ui/gradio/gradio.md](../../web_ui/gradio/gradio.md)
-   - todo: fastAPI
+   - [../../API/readme.md](../../API/readme.md)
+   - [../../API](../../API)
 12. Docker — концепция и минимальный пример Dockerfile для Python‑приложения *(опционально)*. (1 а.ч.)
 
 Шпаргалка по Питону: https://miro.com/app/board/uXjVNQC1rq8=/?share_link_id=938578428749
@@ -77,9 +78,7 @@ Git рекомендован, но не обязателен.
 5. **[Прототип интерфейса (Gradio)](tasks/gradio.md)**
 
 
-6. **Прототип API (FastAPI)**
-
-   * Простейший API для модели, инструкция запуска (README). Короткая демонстрация.
+6. **[Прототип API (FastAPI)](tasks/api.md)**
 
 
 6. **Окружение и Docker**

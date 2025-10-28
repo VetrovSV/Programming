@@ -139,6 +139,7 @@ timeit.repeat(stmt="f()", setup="x = prepare(); from __main__ import f", number=
 
 6. *Бонус: аналогично пункту 3, но используйте пакет `uv`* 
 
+См. продолжение задания - [API-сервер с FastAPI](api.md).
 
 
 Шпаргалка по Virtual Environment https://github.com/VetrovSV/Programming/blob/master/virtualenv.md
@@ -146,5 +147,4 @@ timeit.repeat(stmt="f()", setup="x = prepare(); from __main__ import f", number=
 ## Следующие задания
 - [gradio.md](./gradio.md)
 - [api.md](./api.md)
-
 
