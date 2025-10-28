@@ -455,14 +455,16 @@ v2 = APIRouter(prefix="/api/v2")
 # обработчик эндпоинта определяется с декоратором роутера
 @v1.get("/predict")
 def predict_v1(x: float):
-    return {"version": "v1", "prediction": x * 2}
+    # y = ...
+    return y
 # этот обработчик будут вызван по адресу вида: 127.0.0.1/api/v1/predict
 
 
 @v2.post("/predict")
 def predict_v2(payload: dict):
     # новая логика, другой контракт (например, JSON body)
-    return {"version": "v2", "prediction": sum(payload["features"])}
+    # y = ...
+    return {"prediction": y}
 # этот обработчик будут вызван по адресу вида: 127.0.0.1/api/v2/predict
 
 # добавим роутеры к серверу
