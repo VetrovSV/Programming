@@ -498,6 +498,14 @@ uvicorn app.main:app  --workers 4
 Обычно количество процессов выбирают так: workers =  2 * cores + 1. Если предполагается, что каждый процесс будет загружать CPU почти полностью, то лучше выбрать  workers =  cores.
 
 
+## Granian
+granian - более быстрый чем uvicorn веб-сервер.
+
+```bash
+granian --interface asgi --workers 16 main:app
+```
+
+
 ## ASGI и WSGI
 **WSGI** (Web Server Gateway Interface) — это старый стандарт взаимодействия между Python-веб-приложениями и веб-серверами. появился в 2003 году (PEP 333), когда в Python не было асинхронности (async/await).
 
