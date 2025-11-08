@@ -28,7 +28,7 @@
 2. Python — основы синтаксиса, типы, выражения, управление потоком выполнения (if/for/while), исключительные ситуации (1 а.ч.)
    - [exceptions/readme.md](../../exceptions/readme.md)
 2. Функции, модули, тестирование  — (1 а.ч.)
-   - [package_managers.md](../../package_managers.md): PIP, requrements.txt, UV.
+   - [package_managers.md](../../package_managers.md): PIP, requirements.txt, UV.
    - [tests/tests.md](../../tests/tests.md)
 6. Управление зависимостями: pip, venv, **uv** (1 а.ч.)
    - [virtualenv.md](../../virtualenv.md)
