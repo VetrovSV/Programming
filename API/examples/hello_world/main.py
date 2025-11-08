@@ -40,6 +40,9 @@ async def number(min:int, max:int):
  
 
 """
+настройка окружения:
+
+
 Запуск
 
 Вариант 1

@@ -52,14 +52,31 @@ pip3 install --user virtualenv virtualenvwrapper
 Или так: `source my_env_name/bin/activate`\
 Далее можно устанавливать пакеты пользуясь pip из этой же папки
 
+При проблемах активации см: https://dev.to/shriekdj/python-venv-or-virtualenv-wont-activate-on-windows-3e2
+Разрешить подобные операции для текущего пользователя
+```bash
+Set-ExecutionPolicy Unrestricted -Force -Scope CurrentUser
+```
+
 Деактивировать в ubuntu: `deactivate`
 
-# См. также
+# UV
 uv - более производительный и удобный инструмент для работы с виртуальными окружениями
+
+```
+uv venv
+uv venv my-name
+uv venv --python 3.11
+
+uv pip install package_name
+```
+
+todo:
+
 
 # Ссылки
 https://pypi.org/project/virtualenv/
 
 https://habr.com/ru/post/491916/ -- Создание виртуальных окружений и установка библиотек для Python 3 в IDE PyCharm
 
-Короткая шпарагалка по использованию pip и uv: https://miro.com/app/board/uXjVNQC1rq8=/?share_link_id=938578428749
+Короткая шпаргалка по использованию pip и uv: https://miro.com/app/board/uXjVNQC1rq8=/?share_link_id=938578428749
