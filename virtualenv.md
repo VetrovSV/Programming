@@ -73,6 +73,14 @@ uv pip install package_name
 
 todo:
 
+# Pigar
+
+```bash
+pip install pigar  # пакет для анализа исходников (.py, .ipynb) для поиска зависимостей
+
+# из корня проекта вызвать:
+pigar generate
+```
 
 # Ссылки
 https://pypi.org/project/virtualenv/
