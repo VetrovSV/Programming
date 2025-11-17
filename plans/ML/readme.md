@@ -34,6 +34,11 @@
    - [virtualenv.md](../../virtualenv.md)
 3. Python — структуры данных (list, tuple, dict, set), comprehensions, итераторы, генераторы — (2 а.ч.)
 4. Python — функции высшего порядка, модули, пакеты, ООП‑основы, аннотации типов. (1 а.ч.)
+   - ООП. 
+      - Объявление классов. Методы и поля (объявление в конструкторе). `class`, `__init__`, `self`. Инкапсуляция. Геттеры и сеттеры. Проверка предусловий. `_filed` и `__field`. `@property`, `@prperty.setter`. Пример.
+      - Наследование `Deriverd (Base)`. `super`
+      - Dataclasses. `@dataclass`. 
+      - Методы: `__repr__`, `__str__`, `__eq__`, `__len__`, `__iter__`, `__add__`, `__mul__`
 5. Инструменты и среды: Jupyter, VS Code, Google Collaboratory. (1 а.ч.)
 7. NumPy: массивы, операции, broadcasting, векторизация (2 а.ч.)
 8. Pandas: Series/DataFrame, загрузка/сохранение, запросы и типичные приёмы. (1 а.ч.)
