@@ -1,5 +1,5 @@
 # Языки программирования для машинного обучения и ИИ
-<img src="splash.png" height = 400>
+<a href="https://suno.com/s/wOtyMCKJV5I60TwV"><img src="splash.png" height = 400></a>
 
 
 ## Кратко
