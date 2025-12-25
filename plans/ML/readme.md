@@ -39,11 +39,8 @@
       - Наследование `Deriverd (Base)`. `super`
       - Dataclasses. `@dataclass`. 
       - Методы: `__repr__`, `__str__`, `__eq__`, `__len__`, `__iter__`, `__add__`, `__mul__`
-5. Инструменты и среды: Jupyter, VS Code, Google Collaboratory. (1 а.ч.)
-7. NumPy: массивы, операции, broadcasting, векторизация (2 а.ч.)
-8. Pandas: Series/DataFrame, загрузка/сохранение, запросы и типичные приёмы. (1 а.ч.)
-9. Визуализация: matplotlib, seaborn; принципы наглядной визуализации для EDA и отчётов (1 а.ч.)
-10. scikit‑learn: API (fit/transform/predict), пайплайны, кросс‑валидация, базовые модели: линейная регрессия, логистическая регрессия. (1 а.ч.)
+5. Инструменты и среды: Jupyter, VS Code, Google Collaboratory. Настройка окружения. (1 а.ч.)
+7. NumPy: массивы, операции, векторные операции (2 а.ч.)
 11. Быстрое прототипирование: Gradio, FastAPI. (2 а.ч.)
    - [../../examples/gradio/](../../examples/gradio/)
    - [../../web_ui/gradio/gradio.md](../../web_ui/gradio/gradio.md)
@@ -73,28 +70,23 @@ Git рекомендован, но не обязателен.
 
 Задания оформлены как набор работ, которые студенты выполняют между занятиями и защищают на практиках.
 
-### 1. [Основы Python](tasks/tasks_programming.md)
+### 1. [Основы Python + NumPy](tasks/tasks_programming.md)
    - Условный оператор, циклы
    - Списки, множества, 
    - Функции, модули, тесты для функций
    - Файлы
-   - Классы?
+   - NumPy и векторные операции
 
-### 1. Pip. Venv. Requirements. uv.
-   - Отчёт
-
-
-### 2. **NumPy**
-См. [Основы Python](tasks/tasks_programming.md)
+### 2. [Pip. Venv. Requirements. uv.](https://github.com/VetrovSV/Programming/blob/master/plans/ML/tasks/tasks_programming.md#%D0%B2%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5)
 
 
-### 5. **[Прототип интерфейса (Gradio)](tasks/gradio.md)**
+### 3. **[Прототип интерфейса (Gradio)](tasks/gradio.md)**
 
 
-### 6. **[Прототип API (FastAPI)](tasks/api.md)**
+### 4. **[Прототип API (FastAPI)](tasks/api.md)**
 
 
-### 6. **Классы**
+### 5. **Классы**
 Для одной из работ, где использовали FastAPI или Gradio создайте класс, управляющий моделью.
 Класс должен содержать поля:
 - модель
