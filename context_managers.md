@@ -56,6 +56,29 @@ with open('image.jpg', 'rb') as r, open('copy.jpg', 'wb') as w:
         w.write(chunk)
 ```
 
+### Работа с СУБД
+
+```py
+import sqlite3
+
+with sqlite3.connect('db.sqlite3') as conn:
+    cur = conn.cursor()
+    cur.execute('CREATE TABLE IF NOT EXISTS t (id INTEGER PRIMARY KEY, v TEXT)')
+    cur.execute('INSERT INTO t(v) VALUES (?)', ('hello',))
+# commit/rollback выполнятся автоматически
+```
+
+### Критические секции в паралельных алгоритмах
+
+```py
+import threading
+
+lock = threading.Lock()
+with lock:
+    # критическая секция
+    do_critical_work()
+```
+
 ### HTTP запросы
 
 ```py
@@ -75,6 +98,32 @@ with requests.Session() as s:
         r.raise_for_status()
         for chunk in r.iter_content(8192):
             process(chunk)
+```
+
+`requests.Session()` — это объект сессии , который:
+
+- Переиспользует TCP-соединения (connection pooling).
+- Хранит общие настройки для серии запросов:
+  - cookies
+  - headers
+  - auth
+  - proxies
+  - параметры по умолчанию
+
+Рекомендуется использовать когда нужно выполнить множестов запросов.
+
+### Асинхронные HTTP запросы
+
+```py
+import aiohttp
+import asyncio
+
+async def fetch(url):
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url, timeout=10) as resp:
+            return await resp.text()
+
+asyncio.run(fetch('https://example.com'))
 ```
 
 ## Пример реализация
