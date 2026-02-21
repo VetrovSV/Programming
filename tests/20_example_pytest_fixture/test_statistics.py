@@ -28,9 +28,9 @@ def datasets():
 
 # фикстуру нужно передавать в каждую тестовую функцию
 def test_mean(datasets):
-    assert my_statistics.mean( datasets["empty"] )  is  None
-    assert my_statistics.mean( datasets["one_el"] )  ==  1.2
-    assert my_statistics.mean( datasets["3_el"] )  ==  2.0
+    assert my_statistics.mean( datasets["empty"] )     is  None
+    assert my_statistics.mean( datasets["one_el"] )    ==  1.2
+    assert my_statistics.mean( datasets["3_el"] )      ==  2.0
     assert my_statistics.mean( datasets["3_el_neg"] )  == -2.0
 
 
