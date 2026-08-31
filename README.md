@@ -1,7 +1,9 @@
 # Программирование на Python
 
 
-## [Python для МО](plans/ML/readme.md)
+## [Python для МО 2026](plans/ML/readme_2026.md)
+
+## [Python для МО 2025](plans/ML/readme_2025.md)
 
 
 Задачник: [ivtipm.github.io/Programming/Files/spisocall.htm](https://ivtipm.github.io/Programming/Files/spisocall.htm)
