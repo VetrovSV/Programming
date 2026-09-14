@@ -115,6 +115,8 @@ print(raw_times)
 timeit.repeat(stmt="f()", setup="x = prepare(); from __main__ import f", number=100, repeat=3)
 ```
 
+
+
 # Виртуальное окружение
 
 **Цель.** Научиться создавать воспроизводимое виртуальное окружение (venv), управлять зависимостями и собрать окружение, которое пригодится для ML проектов.
@@ -139,6 +141,8 @@ timeit.repeat(stmt="f()", setup="x = prepare(); from __main__ import f", number=
 
 6. *Бонус: аналогично пункту 3, но используйте пакет `uv`* 
 
+7. *Бонус: аналогично пункту 2, создайте файл pyproject.toml вместо отдельных файлов requirements. Сделайте небольшую шпаргалку как работать с файлам pyproject.toml.
+
 См. продолжение задания - [API-сервер с FastAPI](api.md).
 
 
@@ -147,4 +151,3 @@ timeit.repeat(stmt="f()", setup="x = prepare(); from __main__ import f", number=
 ## Следующие задания
 - [gradio.md](./gradio.md)
 - [api.md](./api.md)
-
