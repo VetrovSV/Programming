@@ -24,46 +24,99 @@
 
 ## План
 
+> *Курсивом* выделены темы для самостоятельного изучения. Они входят в программу экзамена, но на занятиях разбираются лишь частично — готовьтесь по ним самостоятельно.
+
 1. Введение, обзор курса, требования, организация занятий, критерии защиты практик. 
    - Рабочие среды: Pycharm (настройка проекта, выбор интерпретатора), VS Code, плагин для Jupyter Notebook, *Data Wrangler*; Встроенная консоль.
-   - Запуск скриптов в консоли.
-   - Интерфейс jupyter Notebook. Ячейки и их виды. Сохранение состояния и порядок запуска ячеек. Заголовки. Markdown. Среда выполнения Jupyter. Необходимые библиотеки.
+   - Запуск скриптов в консоли. REPL, интерактивный режим интерпретатора; `python -i`.
+   - Запуск: `python script.py` vs `python -m module`.
+   - Интерфейс jupyter Notebook. Ячейки и их виды. Сохранение состояния и порядок запуска ячеек. Заголовки. Markdown. Среда выполнения Jupyter. Необходимые библиотеки. Формат `.ipynb` (JSON); ядро (kernel) vs окружение.
+   - Magic-команды Jupyter: `%timeit`, `%matplotlib inline`, `%run`, `!` (shell-команды).
    - Google Collaboratory
-   - Компиляция в байт-код.
+   - Компиляция в байт-код: `.pyc`, `__pycache__`.
+   - Переменные окружения, `PATH`.
+   - *Git: `clone`, `add`, `commit`, `push`, `status`, `log`*
+   - *Markdown: таблицы, ссылки, формулы LaTeX*
 2. Python — основы синтаксиса.
-   - типы (ссылочные\простые, изменяемые и неизменяемые), литералы, выражения, преобразования типов; динамическая типизация; сборщик мусора;  
-   - управление потоком выполнения (if/for/while/break/continue); отступы; реализация switch-case; 
-   - Вывод и вывод;
-   - строки, интерполяция строк (форматные строки);
-   - исключительные ситуации [exceptions/readme.md](../../exceptions/readme.md); операторы raise, try catch; понятие исключительной ситуации, случаи для генерирования исключений
-2. Функции, модули, тестирование  — (1 а.ч.)
+   - типы (ссылочные\простые, изменяемые и неизменяемые), литералы, выражения, преобразования типов; динамическая типизация; сборщик мусора; `None`, `bool`; числовые типы: `int` (произвольная точность), `float` (IEEE 754, погрешность вычислений), `complex`;  
+   - операторы сравнения и логические (`and`, `or`, `not`); `is` vs `==`; приоритеты операторов;
+   - тернарный оператор `x if c else y`;
+   - управление потоком выполнения (if/for/while/break/continue); отступы; реализация switch-case; `range`, `enumerate`, `zip`; `for ... else` / `while ... else`;
+   - Ввод и вывод: `input()`, `print()`, `str.format`, `%`-форматирование;
+   - строки, интерполяция строк (форматные строки); неизменяемость строк, методы `split`/`join`/`strip`, срезы, сырые строки `r"..."`, escape-последовательности;
+   - исключительные ситуации [exceptions/readme.md](../../exceptions/readme.md); операторы raise, try catch; понятие исключительной ситуации, случаи для генерирования исключений; иерархия исключений, `else`/`finally`, `raise ... from`, паттерн EAFP vs LBYL;
+   - *кодировки и Unicode (UTF-8)*
+   - *`match`/`case` (pattern matching)*
+   - *`with` и контекстные менеджеры*
+   - *`decimal`/`fractions` — точные вычисления*
+3. Функции, модули, тестирование  — (1 а.ч.)
    - Объявление функции, заголовок\тело функции, формальные и фактические аргументы, передача по ссылке и по значению, возврат значений;
-   - Аннотации для типов. Документация функций
-   - Модули. Создание и подключение. Главная программа vs модуль. **компиляция модулей, пакеты**
-   
-   - Тестирование. Оператор assert. Классы входных данных. [tests/tests.md](../../tests/tests.md)
-6. Виртуальные окружения и управление зависимостями: pip, venv, **uv** (1 а.ч.)
+   - Аргументы: позиционные и именованные, `*args`, `**kwargs`, значения по умолчанию (ловушка с изменяемыми аргументами);
+   - Области видимости (LEGB), `global`, `nonlocal`; рекурсия, ограничение глубины;
+   - Аннотации для типов. Документация функций. Типизация: `Optional`, `Union`, `List`, `Dict`, `Callable`; проверка типов `mypy`;
+   - Модули. Создание и подключение. Главная программа vs модуль (`if __name__ == "__main__"`). **компиляция модулей, пакеты**; `import` vs `from ... import`, `as`; `sys.path`, `PYTHONPATH`;
+   - Тестирование. Оператор assert. Классы входных данных. [tests/tests.md](../../tests/tests.md); `unittest`, `pytest`, фикстуры, параметризация;
+   - Оценка сложности алгоритмов BigO: O(1), O(log n), O(n), O(n²); амортизированная сложность;
+   - *декораторы функций*
+   - *`functools`: `lru_cache`, `partial`, `reduce`*
+   - *doctest; подход TDD*
+4. Виртуальные окружения и управление зависимостями: pip, venv, **uv** (1 а.ч.)
    - Необходимость виртуального окружения, [virtualenv.md](../../virtualenv.md); создание и активация\деактивация виртуального окружения;
-   - [package_managers.md](../../package_managers.md): PIP, requirements.txt, UV.
+   - [package_managers.md](../../package_managers.md): PIP, requirements.txt, UV; `pip list`, `pip freeze`, `pip show`, `pip install -e .`;
+   - Lock-файлы (фиксация версий зависимостей); `pyproject.toml`; PyPI, форматы wheel/sdist;
    - *pigar*
-3. Python — структуры данных (list, tuple, dict, set), 
+   - *Poetry, Conda, Pixi*
+5. Python — структуры данных (list, tuple, dict, set), 
    - создание, доступ к элементам, сложность (bigO) и быстродействие типичных операций
-   - индексация списков и кортежей, срезы 
+   - индексация списков и кортежей, срезы (шаг, отрицательные индексы)
+   - хэшируемость и `hash()`; почему ключами `dict` могут быть только неизменяемые типы; `dict`: хэш-таблица, порядок вставки (3.7+), `get`, `setdefault`, `defaultdict`, `Counter`
+   - `set`: `union`/`intersection`/`difference`, `frozenset`
+   - упаковка/распаковка, `*` и `**` в распаковке
+   - копирование: поверхностное vs глубокое (`copy`, `deepcopy`)
    - comprehensions
-   - итераторы, генераторы
-4. Python — *функции высшего порядка*, основы ООП
+   - итераторы, генераторы; итераторы vs итерируемые объекты: `iter()`, `next()`, `StopIteration`; генераторы: `yield`, ленивые вычисления; `map`, `filter`, `sorted(key=)`
+   - *`collections`: `deque`, `namedtuple`, `defaultdict`, `Counter`*
+   - *`itertools`*
+6. Python — *функции высшего порядка*, основы ООП
+   - Функции высшего порядка: `map`, `filter`, `sorted(key=)`; замыкания (closures); декораторы: `@staticmethod`, `@classmethod`, пользовательские.
    - ООП. 
-      - Объявление классов. Методы и поля (объявление в конструкторе). `class`, `__init__`, `self`. Инкапсуляция. Геттеры и сеттеры. Проверка предусловий. `_filed` и `__field`. `@property`, `@prperty.setter`. Пример.
-      - Наследование `Deriverd (Base)`. `super`
-      - Dataclasses. `@dataclass`. 
-      - Методы: `__repr__`, `__str__`, `__eq__`, `__len__`, `__iter__`, `__add__`, `__mul__`
-7. NumPy: массивы, операции, векторные операции 
-11. Быстрое прототипирование: Gradio, FastAPI. (2 а.ч.)
+      - Объявление классов. Методы и поля (объявление в конструкторе). `class`, `__init__`, `self`. Инкапсуляция. Геттеры и сеттеры. Проверка предусловий. `_field` и `__field`. `@property`, `@property.setter`. Пример.
+      - Наследование `Derived (Base)`. `super`; полиморфизм, duck typing; композиция vs наследование.
+      - Dataclasses. `@dataclass`. `field`, `frozen=True`, `__post_init__`.
+      - Методы: `__repr__`, `__str__`, `__eq__`, `__len__`, `__iter__`, `__add__`, `__mul__`, `__call__`, `__getitem__`, `__contains__`, `__enter__`/`__exit__`.
+      - *множественное наследование, MRO*
+      - *абстрактные классы (`ABC`, `@abstractmethod`)*
+      - *`__slots__`; `__new__` vs `__init__`*
+7. NumPy: массивы, операции, векторные операции
+   - `ndarray`: `shape`, `dtype`, `ndim`, `size`
+   - создание: `np.zeros`, `ones`, `arange`, `linspace`, `eye`, `np.random`
+   - индексация: срезы, булевы маски, fancy indexing; views vs copies (например, `reshape` возвращает view)
+   - broadcasting; ufunc, векторные операции
+   - агрегации с `axis`: `sum`, `mean`, `std`, `min`, `max`, `argmin`/`argmax`
+   - `reshape`, `transpose`, `flatten`, `ravel`, `concatenate`
+   - линейная алгебра: `dot`, `@`
+   - `NaN`, `inf`, `np.isnan`, `np.where`
+   - *распределения `np.random`: `normal`, `uniform`, `seed`*
+   - *`np.linalg`: `inv`, `solve`, собственные значения*
+8. Быстрое прототипирование: Gradio, FastAPI. (2 а.ч.)
    - [../../examples/gradio/](../../examples/gradio/)
    - [../../web_ui/gradio/gradio.md](../../web_ui/gradio/gradio.md)
    - [../../API/readme.md](../../API/readme.md)
    - [../../API](../../API)
-12. *Docker — концепция и минимальный пример Dockerfile для Python‑приложения*
+   - HTTP: методы (GET, POST), статус-коды, запрос/ответ; клиент-серверная архитектура, порты, `localhost`
+   - JSON: сериализация/десериализация; REST, эндпоинты, path/query-параметры, тело запроса
+   - uvicorn, ASGI; Pydantic-модели, валидация; OpenAPI/Swagger, `/docs`; CORS
+   - `.env` и конфигурация приложения
+   - Gradio: `Interface` vs `Blocks`, компоненты, `launch()`
+   - *`requests`/`httpx` для клиента*
+   - *авторизация, токены, API-ключи*
+   - *WebSocket*
+9. *Docker — концепция и минимальный пример Dockerfile для Python‑приложения*
+   - образ vs контейнер
+   - Dockerfile: `FROM`, `RUN`, `COPY`, `CMD`, `EXPOSE`, `WORKDIR`
+   - `docker build`, `docker run`, проброс портов `-p`; `.dockerignore`
+   - `docker compose`
+   - volumes; слои образа и кэширование сборки
 
 Шпаргалка по Питону: https://miro.com/app/board/uXjVNQC1rq8=/?share_link_id=938578428749
 
@@ -125,12 +178,16 @@ Git рекомендован, но не обязателен.
 - Pattern Mathcing
 - Асинхронное программирование, процессы и потоки
 - ООП, классы, self, контроль доступа, data classes, специальные методы
-- скрапинг, beautiful soup, selenium
+- скрапинг, beautiful soup, selenium — [selenium.md](../../selenium.md)
 - фреимворки для модульного тестирования
 - структуры данных: очереди, стеки, множества, словари и т.д.
 - элементы функционального программирования
 - JSON и другие форматы
 - Работа с БД, с SQL, ORM
+- Логирование — [logging.md](../../logging.md)
+- Конфигурация и секреты, `.env` — [configs_and_secrets.md](../../configs_and_secrets.md), [config_files.md](../../config_files.md)
+- Контекстные менеджеры — [context_managers.md](../../context_managers.md)
+- Упаковка приложения в исполняемый файл — [PyInstaller.md](../../PyInstaller.md)
 
 
 # Экзамен
