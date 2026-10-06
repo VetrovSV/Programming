@@ -14,7 +14,8 @@ def std_norm_density(x: float) -> float:
     y = 1.0 / sqrt(2 * pi ) * exp( -x**2 / 2.0 )
     return y
 
-
-assert round(std_norm_density(0.0),8)  == 0.39894228
-# assert round(std_norm_density(0.0),8)  == 0.39894228
-# assert round(std_norm_density(0.0),8)  == 0.39894228
+if __name__ == "__main__":
+    assert round(std_norm_density(0.0),8)  == 0.39894228
+    assert round(std_norm_density(0.0),8)  == 0.39894228
+    assert round(std_norm_density(0.0),8)  == 0.39894228
+    print("ла-ла-ла подключаем probability1")
