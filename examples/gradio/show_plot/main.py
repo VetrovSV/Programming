@@ -18,20 +18,24 @@ Y = 2.0 * X + rng.normal(scale=3, size=100)
 
 
 def plot_seaborn_scatter(data):
+    # gr.Dataframe присылает значения ячеек строками; если их не привести к числам,
+    # seaborn считает колонки категориями и переводит оси в категориальную шкалу
+    # (позиции точек и подписи тиков на осях ломаются)
+    data = data.astype(float)
     # создание контейнера для всей картинки
     fig, ax = plt.subplots(figsize=(6,4))
     # fig: matplotlib.figure.Figure - контейнер» для всего рисунка (вся страница/холст)
     # ax: matplotlib.axes.Axes - полотно графика
     # добавляем на полотно (ax) данные, alpha - прозрачность, s - размер маркеров
-    seaborn.scatterplot(x=X, y=Y, ax=ax, alpha=0.7, x="x", y="y")
+    seaborn.scatterplot(x=X, y=Y, ax=ax, alpha=0.7)
     # поверх того же полотна дорисуем новые точки
-    seaborn.scatterplot(data=data, ax=ax, s=50, x="x", y="y", 
+    seaborn.scatterplot(data=data, ax=ax, s=50, x="x", y="y",
                          marker='x', color='red',  # размер, тип, цвет маркера
                         label='new points', zorder=5)
     # если точка всего одна, то можно так:
     # seaborn.scatterplot(x = [координата_х], y = [координата_y], ...)
     # подписи к осям
-    ax.set_xlabel("most important feature")     
+    ax.set_xlabel("most important feature")
     ax.set_ylabel("target")
     ax.legend()         # вкл. легенду
 
@@ -40,7 +44,7 @@ def plot_seaborn_scatter(data):
 
 
 gr.Interface(
-    fn=plot_seaborn_scatter, 
+    fn=plot_seaborn_scatter,
     inputs=gr.Dataframe(headers=["x", "y"]),            # таблица
     outputs=gr.Plot()                                   # компонент для отображения Figure (графиков matplotlib)
 ).launch()
